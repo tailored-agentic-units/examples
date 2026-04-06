@@ -1,0 +1,39 @@
+[
+  {
+    "name": "get_weather",
+    "description": "Get the current weather for a given location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string",
+          "description": "The city name, e.g., Tokyo, London, New York"
+        },
+        "unit": {
+          "type": "string",
+          "enum": ["celsius", "fahrenheit"],
+          "description": "Temperature unit"
+        }
+      },
+      "required": ["location"]
+    }
+  },
+  {
+    "name": "search_documents",
+    "description": "Search internal documents by keyword query",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The search query"
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of results to return"
+        }
+      },
+      "required": ["query"]
+    }
+  }
+]

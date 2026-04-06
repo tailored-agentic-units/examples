@@ -1,0 +1,38 @@
+{
+  "name": "azure-agent",
+  "system_prompt": "You are an expert software architect specializing in cloud native systems design",
+  "client": {
+    "timeout": "24s",
+    "retry": {
+      "max_retries": 3,
+      "initial_backoff": "1s",
+      "max_backoff": "30s",
+      "backoff_multiplier": 2.0,
+      "jitter": true
+    },
+    "connection_pool_size": 10,
+    "connection_timeout": "9s"
+  },
+  "provider": {
+    "name": "azure",
+    "base_url": "https://tau-ai.openai.azure.com/openai",
+    "options": {
+      "deployment": "gpt-5-mini",
+      "api_version": "2025-04-01-preview"
+    }
+  },
+  "model": {
+    "name": "gpt-5-mini",
+    "capabilities": {
+      "chat": {
+        "max_completion_tokens": 4096
+      },
+      "vision": {
+        "max_completion_tokens": 4096
+      },
+      "tools": {
+        "max_completion_tokens": 4096
+      }
+    }
+  }
+}

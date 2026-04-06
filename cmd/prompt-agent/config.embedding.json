@@ -1,0 +1,27 @@
+{
+  "name": "embeddings-agent",
+  "client": {
+    "timeout": "2m",
+    "retry": {
+      "max_retries": 3,
+      "initial_backoff": "1s",
+      "max_backoff": "30s",
+      "backoff_multiplier": 2.0,
+      "jitter": true
+    },
+    "connection_pool_size": 10,
+    "connection_timeout": "6s"
+  },
+  "provider": {
+    "name": "ollama",
+    "base_url": "http://localhost:11434"
+  },
+  "model": {
+    "name": "embeddinggemma:300m",
+    "capabilities": {
+      "embeddings": {
+        "dimensions": 768
+      }
+    }
+  }
+}

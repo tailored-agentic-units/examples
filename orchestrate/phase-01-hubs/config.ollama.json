@@ -1,0 +1,27 @@
+{
+  "name": "ministral-agent",
+  "client": {
+    "timeout": "2m"
+  },
+  "provider": {
+    "name": "ollama",
+    "base_url": "http://localhost:11434"
+  },
+  "model": {
+    "name": "ministral-3:8b",
+    "capabilities": {
+      "chat": {
+        "max_tokens": 150,
+        "temperature": 0.3
+      },
+      "vision": {
+        "max_tokens": 150,
+        "temperature": 0.3
+      },
+      "tools": {
+        "max_tokens": 150,
+        "temperature": 0.3
+      }
+    }
+  }
+}
