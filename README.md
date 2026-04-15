@@ -10,6 +10,7 @@ This module sits at the top of the TAU dependency tree, importing all TAU librar
 examples/
   cmd/prompt-agent/    -- Multi-protocol CLI tool
   orchestrate/         -- Orchestrate library examples
+  container/           -- Container library examples
   internal/agentutil/  -- Shared agent creation helper
   docker-compose.yml   -- Ollama with auto-model-pull
 ```
@@ -37,6 +38,7 @@ examples/
 
 - [prompt-agent](./cmd/prompt-agent/README.md) -- Multi-protocol CLI tool (chat, vision, tools, embeddings)
 - [orchestrate examples](./orchestrate/README.md) -- Hub communication, state graphs, chains, parallel execution, checkpointing, conditional routing, and multi-agent workflows
+- [container examples](./container/README.md) -- Docker runtime lifecycle, exec, and manifest-fallback patterns
 
 ## Models
 
@@ -65,3 +67,5 @@ This module imports the full TAU stack:
 | `github.com/tailored-agentic-units/provider/bedrock` | AWS Bedrock provider |
 | `github.com/tailored-agentic-units/agent` | Agent creation and protocol execution |
 | `github.com/tailored-agentic-units/orchestrate` | Orchestration patterns (hubs, chains, graphs) |
+| `github.com/tailored-agentic-units/container` | OCI-aligned container runtime abstraction |
+| `github.com/tailored-agentic-units/container/docker` | Docker Engine API runtime implementation |
