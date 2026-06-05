@@ -15,7 +15,7 @@
   },
   "provider": {
     "name": "azure",
-    "base_url": "https://tau-ai.openai.azure.com/openai",
+    "base_url": "https://tau-ai.services.ai.azure.com/openai",
     "options": {
       "deployment": "gpt-5-mini",
       "api_version": "2025-04-01-preview"
