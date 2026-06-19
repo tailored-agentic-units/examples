@@ -17,6 +17,8 @@
     "name": "azure",
     "base_url": "https://tau-ai.services.ai.azure.com/openai",
     "options": {
+      "auth_type": "api_key",
+      "token": "",
       "deployment": "gpt-5-mini",
       "api_version": "2025-04-01-preview"
     }
